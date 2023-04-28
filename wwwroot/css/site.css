@@ -21,12 +21,25 @@ body {
   margin-bottom: 60px;
 }
 
-.bg-grey{
+.bg-grey {
   background-color: grey;
 }
 
+.bg-site {
+    /*background: repeat;*/
+    background-image: url('../images/textura-fundo.jpg');
+    background-size: contain;
+}
+
 @font-face{
-    font-family: 'Motiro';
+    font-family: 'Motiro2022';
+    src: url('../fonts/KeeponTruckin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Motiro01';
     src: url('../fonts/EVILDEAD.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -36,6 +49,14 @@ body {
     color: yellow;
 }
 
-.font-motiro{
-    font-family: 'Motiro', 'Times New Roman';
+.font-teste{
+    color: grey;
+}
+
+.font-motiro2022{
+    font-family: 'Motiro2022', 'Times New Roman', 'Sans Serif Collection';
+}
+
+.font-motiro01 {
+    font-family: 'Motiro01', 'Times New Roman', 'Sans Serif Collection';
 }
