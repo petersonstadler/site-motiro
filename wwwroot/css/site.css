@@ -39,8 +39,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Motiro01';
-    src: url('../fonts/EVILDEAD.TTF') format('truetype');
+    font-family: 'Motiro2023';
+    src: url('../fonts/Candrika.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,6 +57,6 @@ body {
     font-family: 'Motiro2022', 'Times New Roman', 'Sans Serif Collection';
 }
 
-.font-motiro01 {
-    font-family: 'Motiro01', 'Times New Roman', 'Sans Serif Collection';
+.font-motiro2023 {
+    font-family: 'Motiro2023', 'Times New Roman', 'Sans Serif Collection';
 }
