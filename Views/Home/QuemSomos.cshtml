@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Colaborador>
+
+@{
+    ViewData["Title"] = "Quem Somos";
+}
+
+
+<div class="text-center">
+    <h1 class="display-1 text-yellow font-motiro2023 mb-4">A Trupe Reversa</h1>
+    <p class="mb-3 text-light">A Equipe é formada, atualmente, por 11 integrantes, na faixa etária dos seus vinte e tantos anos, cujas formações acadêmicas vão desde pedagogia, design gráfico, geografia, administração, música e áreas da tecnologia e natureza, os quais sempre sentiram falta de diversidade cultural na região, principalmente quanto ao Rock in Roll, sendo assim, juntaram essa necessidade individual e se uniram para atender à coletividade, onde cada um, a sua maneira desempenha um papel fundamental desde o início, para que este projeto pudesse ser um sucesso. A criação do grupo Trupe Reversa tem em sua síntese o desejo pela transformação através da mobilização das ideias pautados em respeito, diálogo e uma boa cervejinha. O grupo trabalha de maneira voluntária, não recebendo qualquer benefício monetário, mas sim, recebendo a satisfação de ver o sorriso estampado no rosto desde a criança até o mais velho, ao viver ou relembrar momentos que com certeza permanecerão em suas memórias.</p>
+</div>
+
+<div class="text-center">
+    <h1 class="display-1 text-yellow font-motiro2023 mb-4">Integrantes</h1>
+
+    <div class="grid-persons">
+        @foreach (var colaborador in Model)
+        {
+            <div>
+                <span class="d-inline-flex">
+                    <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
+                    <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
+                </span><br />
+                <img class="mb-2 mt-2" src="@colaborador.ImagePatch" height="160px" style="border-radius: 15em;" /><br>
+                <span class="text-light fw-bold" style="font-size: 20px;">@colaborador.Nome @colaborador.Sobrenome</span>
+            </div>
+        }
+    </div>
+    
+
+    @*<div class="row">
+        <div class="text-center col">
+            <span class="d-inline-flex">
+                <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
+                <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
+            </span><br />
+            <img class="mb-2 mt-2" src="~/images/vocalista banda volks 2.jpg" width="160px" height="160px" style="border-radius: 15em;" /><br>
+            <span class="text-light fw-bold" style="font-size: 20px;">Peterson Siqueira Stadler</span>
+        </div>
+
+        <div class="text-center col">
+            <span class="d-inline-flex">
+                <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
+                <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
+            </span><br />
+            <img class="mb-2 mt-2" src="~/images/vocalista banda volks 2.jpg" width="160px" height="160px" style="border-radius: 15em;" /><br>
+            <span class="text-light fw-bold" style="font-size: 20px;">Peterson Siqueira Stadler</span>
+        </div>
+    </div>*@
+</div>

@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using site_motiro.Models;
+using site_motiro.Repositories.Implementations;
 
 namespace site_motiro.Controllers;
 
@@ -18,9 +19,10 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult QuemSomos()
     {
-        return View();
+        var colaboradores = new ColaboradoresRepository().GetAllColaboradores();
+        return View(colaboradores);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
