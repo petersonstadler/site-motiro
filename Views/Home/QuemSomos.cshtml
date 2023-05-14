@@ -13,38 +13,17 @@
 <div class="text-center">
     <h1 class="display-1 text-yellow font-motiro2023 mb-4">Integrantes</h1>
 
-    <div class="grid-persons">
+    <div class="row">
         @foreach (var colaborador in Model)
         {
-            <div>
+            <div class="col-md-4 mb-5">
                 <span class="d-inline-flex">
                     <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
                     <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
                 </span><br />
-                <img class="mb-2 mt-2" src="@colaborador.ImagePatch" height="160px" style="border-radius: 15em;" /><br>
+                <img class="mb-2 mt-2" src="@colaborador.ImagePatch" height="160" style="border-radius: 15em;" /><br>
                 <span class="text-light fw-bold" style="font-size: 20px;">@colaborador.Nome @colaborador.Sobrenome</span>
             </div>
-        }
+         }
     </div>
-    
-
-    @*<div class="row">
-        <div class="text-center col">
-            <span class="d-inline-flex">
-                <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
-                <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
-            </span><br />
-            <img class="mb-2 mt-2" src="~/images/vocalista banda volks 2.jpg" width="160px" height="160px" style="border-radius: 15em;" /><br>
-            <span class="text-light fw-bold" style="font-size: 20px;">Peterson Siqueira Stadler</span>
-        </div>
-
-        <div class="text-center col">
-            <span class="d-inline-flex">
-                <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
-                <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
-            </span><br />
-            <img class="mb-2 mt-2" src="~/images/vocalista banda volks 2.jpg" width="160px" height="160px" style="border-radius: 15em;" /><br>
-            <span class="text-light fw-bold" style="font-size: 20px;">Peterson Siqueira Stadler</span>
-        </div>
-    </div>*@
 </div>

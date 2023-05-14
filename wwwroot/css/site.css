@@ -60,9 +60,3 @@ body {
 .font-motiro2023 {
     font-family: 'Motiro2023', 'Times New Roman', 'Sans Serif Collection';
 }
-
-.grid-persons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-}
