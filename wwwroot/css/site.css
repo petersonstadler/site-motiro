@@ -60,3 +60,25 @@ body {
 .font-motiro2023 {
     font-family: 'Motiro2023', 'Times New Roman', 'Sans Serif Collection';
 }
+
+@media (min-width: 600px) {
+    #imgembreve{
+        display: block;
+        margin: 2px auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .font-motiro2023-responsiva {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 600px) {
+    .font-motiro2023-responsiva {
+        font-size: 24px;
+    }
+}
+
+
