@@ -18,17 +18,14 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-image: url(../images/backgrounds/textura-fundo.jpg);
+    background-size: cover;
+    margin-bottom: 60px;
+    background-position: center;
 }
 
 .bg-grey {
   background-color: grey;
-}
-
-.bg-site {
-    /*background: repeat;*/
-    background-image: url('../images/textura-fundo.jpg');
-    background-size: contain;
 }
 
 @font-face{
@@ -43,6 +40,12 @@ body {
     src: url('../fonts/Candrika.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+.backcolor {
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 4%;
+    
 }
 
 .text-yellow{
