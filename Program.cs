@@ -1,7 +1,12 @@
+using site_motiro.Repositories.Implementations;
+using site_motiro.Repositories.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IColaboradoresRepository, ColaboradoresRepository>();
+builder.Services.AddScoped<IGeralRepository, GeralRepository>();
 
 var app = builder.Build();
 
