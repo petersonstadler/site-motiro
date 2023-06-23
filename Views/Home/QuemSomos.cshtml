@@ -21,10 +21,6 @@
         @foreach (var colaborador in Model)
         {
             <div class="col-md-4 mb-5">
-                <span class="d-inline-flex">
-                    <i class="bi bi-star-fill text-yellow" style="font-size: 27px;"></i>
-                    <i class="bi bi-star-fill" style="color:lightgray; font-size: 27px;"></i>
-                </span><br />
                 <img class="mb-2 mt-2" src="@colaborador.ImagePatch" height="160" style="border-radius: 15em;" /><br>
                 <span class="text-light fw-bold" style="font-size: 20px;">@colaborador.Nome @colaborador.Sobrenome</span>
             </div>
